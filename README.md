@@ -1,18 +1,20 @@
 # **Awesome AI Agent Orchestrators**
 
-_A curated list of awesome tools for orchestrating AI coding agents._
+_A curated list of awesome AI coding-agent orchestrators and the companion tools that make multi-agent development practical._
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-AI coding is moving from **one agent in one terminal** to **fleets of agents working in parallel**. This list focuses on tools that help developers run, isolate, supervise, review, and merge work from Claude Code, Codex, OpenCode, Gemini CLI, Cursor, Pi, and other coding agents.
+AI coding is moving from **one agent in one terminal** to **orchestrated teams of agents**. This list focuses on software that coordinates coding agents: spawning and supervising parallel sessions, isolating work, routing tasks, enabling agent-to-agent or human-to-agent coordination, reviewing changes, and integrating results.
+
+**Orchestrator** is intentionally broad here. It includes desktop Agent Development Environments (ADEs), terminal/TUI multiplexers, task and Kanban systems, and programmable multi-agent workflow engines. A tool does not need to resemble Conductor to qualify.
 
 > [!NOTE]
-> The closest alternatives to [Conductor](https://www.conductor.build/) are listed first. Companion tools are kept separate so this does not become a generic AI-tools directory.
+> Companion tools are kept separate so this remains an orchestrator list rather than a generic AI-tools directory.
 
 ## **Table of Contents**
 
-1. [Conductor-like Orchestrators](#conductor-like-orchestrators)
+1. [Desktop & GUI Orchestrators](#desktop--gui-orchestrators)
 2. [Terminal & TUI Orchestrators](#terminal--tui-orchestrators)
 3. [Kanban & Workflow Orchestrators](#kanban--workflow-orchestrators)
 4. [Companion Tools](#companion-tools)
@@ -25,9 +27,31 @@ AI coding is moving from **one agent in one terminal** to **fleets of agents wor
 7. [Author](#author)
 8. [Support](#support)
 
-## **1. Conductor-like Orchestrators**
+## **1. Desktop & GUI Orchestrators**
 
-These are the closest matches to Conductor's model: parallel coding-agent sessions, isolated workspaces/worktrees, supervision, and review.
+Visual environments for coordinating coding agents. These range from parallel-session workspaces to full ADEs with worktree isolation, task management, review, remote control, and multi-agent coordination.
+
+### Quick Comparison
+
+| Orchestrator | Interface | Parallel agents | Isolation | Coordination | Review / merge | Remote / mobile |
+| --- | --- | :---: | --- | --- | :---: | :---: |
+| [bb](https://github.com/get-bb/bb) | Desktop / Web / CLI / API | ✅ | Worktrees | Threads / plugins | ✅ | Web |
+| [Orca](https://github.com/stablyai/orca) | Desktop / Mobile / CLI | ✅ | Worktrees / SSH | Fleet supervision | ✅ | ✅ |
+| [Superset](https://github.com/superset-sh/superset) | Desktop | ✅ | Worktrees | Fleet supervision | ✅ | — |
+| [Emdash](https://github.com/generalaction/emdash) | Desktop | ✅ | Isolated workspaces | Parallel sessions | ✅ | — |
+| [OpenChamber](https://github.com/openchamber/openchamber) | Desktop / Web / Editor / Mobile | ✅ | Per-run worktrees | Parallel runs | ✅ | ✅ |
+| [Vicoa](https://github.com/vicoa-ai/vicoa) | Desktop / Web / Mobile | ✅ | Worktrees | Multi-agent control | ✅ | ✅ |
+| [Tempest](https://github.com/tempestai-dev/tempest) | Desktop | ✅ | Worktrees | Shared code knowledge | ✅ | — |
+| [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | Desktop | ✅ | Worktrees | Task tracking | ✅ | Mobile companion |
+| [Parallel Code](https://github.com/johannesjo/parallel-code) | Desktop | ✅ | Worktrees | Parallel sessions | ✅ | — |
+| [intentic](https://github.com/intentic/intentic) | Web / Self-hosted | ✅ | Docker / worktrees | Workspace orchestration | ✅ | Web |
+| [Paseo](https://github.com/getpaseo/paseo) | Desktop / Web / CLI | ✅ | Agent workspaces | Multi-agent control | — | ✅ |
+| [Termic](https://github.com/simion/termic) | Desktop | ✅ | Worktrees / sandbox | Multi-repo tasks | ✅ | — |
+| [Crystal](https://github.com/stravu/crystal) | Desktop | ✅ | Worktrees | Parallel sessions | ✅ | — |
+| [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) | Web / Desktop | ✅ | Workspaces | Kanban tasks | ✅ | Web |
+| [Conductor](https://www.conductor.build/) | Desktop | ✅ | Workspaces / worktrees | Parallel sessions | ✅ | Cloud |
+
+The table emphasizes orchestration mechanics rather than declaring a single tool the reference implementation.
 
 - [get-bb/bb](https://github.com/get-bb/bb) - Open-source agentic IDE with desktop, web, CLI, and HTTP API surfaces. Runs agent work in steerable threads and supports managed Git worktrees.
 - [stablyai/orca](https://github.com/stablyai/orca) - Open-source Agent Development Environment for running fleets of coding agents in parallel using your own subscriptions, with desktop, mobile, and remote runtime support.
@@ -42,7 +66,7 @@ These are the closest matches to Conductor's model: parallel coding-agent sessio
 - [simion/termic](https://github.com/simion/termic) - Open-source Conductor alternative that runs real agent CLIs in PTYs with parallel worktrees, multi-repo tasks, and sandboxing.
 - [stravu/crystal](https://github.com/stravu/crystal) - Desktop multi-session manager for running Claude Code and Codex in parallel Git worktrees.
 - [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) - Kanban-based workspace for planning, running, reviewing, and merging coding-agent work. The upstream project is sunsetting, but remains an important open-source reference.
-- [Conductor](https://www.conductor.build/) - The reference product for this category: parallel coding agents in isolated workspaces, local and cloud execution, review, and automation. Proprietary; included as the baseline.
+- [Conductor](https://www.conductor.build/) - Proprietary desktop orchestrator for parallel coding agents in isolated workspaces with local/cloud execution, review, and automation.
 
 - [vivy-company/aizen](https://github.com/vivy-company/aizen) - macOS workspace for organizing Git worktrees, environments, and coding-agent sessions per project.
 - [mrmans0n/alas](https://github.com/mrmans0n/alas) - Native macOS agent workspace with worktree terminals, native chat panes, comment-based review, merge workflows, SSH, and phone pickup.
@@ -153,7 +177,7 @@ Orchestrators need agents to run. Common open-source or CLI-based companions inc
 
 ## **6. Contributions**
 
-Contributions are welcome. Please keep additions focused on tools that **orchestrate, supervise, isolate, review, route, or materially support coding-agent workflows**.
+Contributions are welcome. The primary list is for tools that **coordinate multiple coding agents, sessions, tasks, or execution environments**. Companion tools may supervise, isolate, review, route, provide context, or otherwise materially support those orchestrated workflows.
 
 Before submitting a project:
 
