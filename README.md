@@ -33,23 +33,38 @@ Visual environments for coordinating coding agents. These range from parallel-se
 
 ### Quick Comparison
 
-| Orchestrator | Interface | Parallel agents | Isolation | Coordination | Review / merge | Remote / mobile |
-| --- | --- | :---: | --- | --- | :---: | :---: |
-| [bb](https://github.com/get-bb/bb) | Desktop / Web / CLI / API | ✅ | Worktrees | Threads / plugins | ✅ | Web |
-| [Orca](https://github.com/stablyai/orca) | Desktop / Mobile / CLI | ✅ | Worktrees / SSH | Fleet supervision | ✅ | ✅ |
-| [Superset](https://github.com/superset-sh/superset) | Desktop | ✅ | Worktrees | Fleet supervision | ✅ | — |
-| [Emdash](https://github.com/generalaction/emdash) | Desktop | ✅ | Isolated workspaces | Parallel sessions | ✅ | — |
-| [OpenChamber](https://github.com/openchamber/openchamber) | Desktop / Web / Editor / Mobile | ✅ | Per-run worktrees | Parallel runs | ✅ | ✅ |
-| [Vicoa](https://github.com/vicoa-ai/vicoa) | Desktop / Web / Mobile | ✅ | Worktrees | Multi-agent control | ✅ | ✅ |
-| [Tempest](https://github.com/tempestai-dev/tempest) | Desktop | ✅ | Worktrees | Shared code knowledge | ✅ | — |
-| [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | Desktop | ✅ | Worktrees | Task tracking | ✅ | Mobile companion |
-| [Parallel Code](https://github.com/johannesjo/parallel-code) | Desktop | ✅ | Worktrees | Parallel sessions | ✅ | — |
-| [intentic](https://github.com/intentic/intentic) | Web / Self-hosted | ✅ | Docker / worktrees | Workspace orchestration | ✅ | Web |
-| [Paseo](https://github.com/getpaseo/paseo) | Desktop / Web / CLI | ✅ | Agent workspaces | Multi-agent control | — | ✅ |
-| [Termic](https://github.com/simion/termic) | Desktop | ✅ | Worktrees / sandbox | Multi-repo tasks | ✅ | — |
-| [Crystal](https://github.com/stravu/crystal) | Desktop | ✅ | Worktrees | Parallel sessions | ✅ | — |
-| [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) | Web / Desktop | ✅ | Workspaces | Kanban tasks | ✅ | Web |
-| [Conductor](https://www.conductor.build/) | Desktop | ✅ | Workspaces / worktrees | Parallel sessions | ✅ | Cloud |
+> Pricing is the **orchestrator price**, not the cost of Claude, Codex, Gemini, model APIs, cloud VMs, or other agent/provider subscriptions. **BYO** means the orchestrator uses credentials/subscriptions you provide. Pricing changes frequently; verify the linked project before purchasing.
+
+| Orchestrator | License | Plan | Published price | Agent cost | Interface | Isolation | Remote |
+| --- | --- | --- | --- | --- | --- | --- | :---: |
+| [bb](https://github.com/get-bb/bb) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web / CLI / API | Worktrees | Web |
+| [Orca](https://github.com/stablyai/orca) | MIT | Free / self-hosted | $0 | BYO | Desktop / Mobile / CLI | Worktrees / SSH | ✅ |
+| [Superset](https://github.com/superset-sh/superset) | ELv2 source-available | Free + Pro | Free; Pro $20/seat/mo | BYO | Desktop / Mobile / CLI / SDK | Worktrees | Pro |
+| [Emdash](https://github.com/generalaction/emdash) | Open source | Free / self-hosted | $0 | BYO | Desktop | Isolated workspaces | — |
+| [OpenChamber](https://github.com/openchamber/openchamber) | Open source | Free / self-hosted | $0 | BYO | Desktop / Web / Editor / Mobile | Worktrees | ✅ |
+| [Vicoa](https://github.com/vicoa-ai/vicoa) | Open source | Free / self-hosted | $0 | BYO | Desktop / Web / Mobile | Worktrees | ✅ |
+| [Tempest](https://github.com/tempestai-dev/tempest) | Open source | Free / self-hosted | $0 | BYO | Desktop | Worktrees | — |
+| [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | MIT | Free / self-hosted | $0 | BYO | Desktop | Worktrees | Mobile companion |
+| [Parallel Code](https://github.com/johannesjo/parallel-code) | MIT | Free | $0 | BYO | Desktop | Worktrees | — |
+| [intentic](https://github.com/intentic/intentic) | MIT | Free / self-hosted | $0 | BYO | Web | Docker / worktrees | Web |
+| [Paseo](https://github.com/getpaseo/paseo) | Open source | Free / self-hosted | $0 | BYO | Desktop / Web / CLI | Agent workspaces | ✅ |
+| [Termic](https://github.com/simion/termic) | AGPL-3.0 | Free / self-hosted | $0 | BYO | Desktop | Worktrees / sandbox | — |
+| [Crystal](https://github.com/stravu/crystal) | Open source | Free / self-hosted | $0 | BYO | Desktop | Worktrees | — |
+| [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) | Open source | Free / self-hosted | $0 | BYO | Web / Desktop | Workspaces | Web |
+| [Conductor](https://www.conductor.build/) | Proprietary | Free + Pro + Teams | Free; Pro $50/mo; Teams $60/user/mo* | BYO locally | Desktop | Worktrees / cloud sandboxes | Cloud |
+
+\* Published pricing can change. Entries with paid plans should be checked against the vendor's current pricing page.
+
+### Pricing Labels
+
+- **Free** — no orchestrator subscription fee.
+- **Free / self-hosted** — the software itself can be run without a paid orchestrator plan; infrastructure may still cost money.
+- **Free + Pro** — usable free tier plus optional paid functionality.
+- **Paid** — requires a paid orchestrator plan for normal use.
+- **BYO** — bring your own coding-agent subscription, API key, or model provider; those costs are separate.
+- **Custom / Enterprise** — vendor does not publish a fixed public price.
+
+For projects without a commercial service, the list uses **$0 + BYO** rather than calling the complete AI workflow free. Running five free orchestrator sessions against five paid model subscriptions can still be expensive.
 
 The table emphasizes orchestration mechanics rather than declaring a single tool the reference implementation.
 
