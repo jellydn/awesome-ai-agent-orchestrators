@@ -86,6 +86,11 @@ The table emphasizes orchestration mechanics rather than declaring a single tool
 - [coder/xum](https://github.com/coder/xum) - Desktop application for isolated parallel agentic development.
 - [zeronsh/zeron](https://github.com/zeronsh/zeron) - Cross-device coding-agent control plane with an always-on daemon and synchronized sessions across machines.
 
+- [Untrivial-ai/agent-orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) - Apache-2.0 orchestration platform for planning, running, supervising, reviewing, and merging teams of coding agents across desktop, web, mobile, and cloud.
+- [AgentsMesh/AgentsMesh](https://github.com/AgentsMesh/AgentsMesh) - Multi-machine control plane for scheduling, isolating, and steering large fleets of AI coding agents from one console.
+- [chaitanyagiri/munder-difflin](https://github.com/chaitanyagiri/munder-difflin) - Local multi-agent harness for coordinating an office of agents using existing Claude Code and Codex subscriptions.
+- [automazeio/ccpm](https://github.com/automazeio/ccpm) - GitHub Issues and Git-worktree based project-management system for parallel agent execution.
+
 ## **2. Terminal & TUI Orchestrators**
 
 For developers who prefer a terminal-native workflow.
@@ -97,6 +102,8 @@ For developers who prefer a terminal-native workflow.
 
 - [agent-of-empires/agent-of-empires](https://github.com/agent-of-empires/agent-of-empires) - TUI plus web view for supervising the same coding-agent sessions locally or from a phone.
 - [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) - Ghostty-based macOS terminal designed for supervising many concurrent coding-agent sessions.
+
+- [awslabs/cli-agent-orchestrator](https://github.com/awslabs/cli-agent-orchestrator) - Apache-2.0 multi-agent orchestrator for coding CLIs such as Claude Code, Kiro, and Codex using isolated terminal sessions.
 
 ## **3. Kanban & Workflow Orchestrators**
 
