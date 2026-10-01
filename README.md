@@ -122,6 +122,7 @@ These are not necessarily Conductor replacements. They make a parallel-agent set
 - [Delta](https://delta.dev/) - Collaborative agent workspace from the `my-ai-tools` stack for isolated checkouts, agent threads, review, and syncing changes back to a repository.
 - [nkzw-tech/codiff](https://github.com/nkzw-tech/codiff) - Agent-aware code review/diff tool used in `my-ai-tools`, with configurable agent backends and review-comment workflows.
 - [ctx](https://ctx.rs/) - Open-source local index and search layer for past coding-agent sessions, with SQLite-backed history and MCP access.
+- [kaitranntt/ccs](https://github.com/kaitranntt/ccs) - MIT-licensed Claude Code Switch profile manager with multi-account support, OAuth providers, API profiles, a visual dashboard, and concurrent provider workflows.
 - [vercel-labs/fx](https://github.com/vercel-labs/fx) - Tiny, open, embeddable native coding agent with ACP, MCP, skills, and subagents.
 
 ### Review & Diff
