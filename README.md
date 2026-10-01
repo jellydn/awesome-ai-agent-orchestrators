@@ -73,6 +73,9 @@ This section is seeded from the tools used in [jellydn/my-ai-tools](https://gith
 
 ### Agent Launchers & Providers
 
+- [Delta](https://delta.dev/) - Collaborative agent workspace from the `my-ai-tools` stack for isolated checkouts, agent threads, review, and syncing changes back to a repository.
+- [nkzw-tech/codiff](https://github.com/nkzw-tech/codiff) - Agent-aware code review/diff tool used in `my-ai-tools`, with configurable agent backends and review-comment workflows.
+- [ctx](https://ctx.rs/) - Open-source local index and search layer for past coding-agent sessions, with SQLite-backed history and MCP access.
 - [jellydn/ai-launcher](https://github.com/jellydn/ai-launcher) - Fast cross-platform launcher for switching among AI coding CLIs with fuzzy search, aliases, templates, and automatic detection.
 - [Ike-li/ccs](https://github.com/Ike-li/ccs) - Claude Code provider switcher for Anthropic-compatible providers.
 - [vercel-labs/fx](https://github.com/vercel-labs/fx) - Tiny, open, embeddable native coding agent with ACP, MCP, skills, and subagents.
