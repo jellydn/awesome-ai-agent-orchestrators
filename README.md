@@ -111,6 +111,7 @@ Tools that organize agent work around tasks, boards, or structured execution rat
 
 - [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) - Kanban planning plus isolated agent workspaces, diff review, previews, PR creation, and merge.
 - [automaker](https://github.com/AutoMaker-Org/automaker) - Feature-oriented agent workflow with Kanban-style planning and isolated worktrees.
+- [tale-project/tale](https://github.com/tale-project/tale) - Project workspace for assigning tasks to reusable coding agents, running them in persistent sandboxes, and reviewing returned reports and deliverables.
 
 ## **4. Companion Tools**
 
