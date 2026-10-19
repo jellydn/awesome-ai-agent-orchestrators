@@ -39,6 +39,7 @@ Visual environments for coordinating coding agents. These range from parallel-se
 
 | Orchestrator | License | Plan | Published price | Agent cost | Interface | Isolation | Remote |
 | --- | --- | --- | --- | --- | --- | --- | :---: |
+| [Omnigent](https://github.com/omnigent-ai/omnigent) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop / Web / CLI | Sandboxes | ✅ |
 | [bb](https://github.com/get-bb/bb) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web / CLI / API | Worktrees | Web |
 | [Orca](https://github.com/stablyai/orca) | MIT | Free / self-hosted | $0 | BYO | Desktop / Mobile / CLI | Worktrees / SSH | ✅ |
 | [Superset](https://github.com/superset-sh/superset) | ELv2 source-available | Free + Pro | Free; Pro $20/seat/mo | BYO | Desktop / Mobile / CLI / SDK | Worktrees | Pro |
@@ -66,6 +67,7 @@ For projects without a commercial service, the list uses **$0 + BYO** rather tha
 
 The table emphasizes orchestration mechanics rather than declaring a single tool the reference implementation. Only GitHub projects meeting the 1,000-star threshold are included.
 
+- [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) - Open-source desktop and web meta-harness for supervising Claude Code, Codex, Cursor, OpenCode, Pi, and custom agents, with collaborative sessions and sandboxed execution.
 - [get-bb/bb](https://github.com/get-bb/bb) - Open-source agentic IDE with desktop, web, CLI, and HTTP API surfaces. Runs agent work in steerable threads and supports managed Git worktrees.
 - [stablyai/orca](https://github.com/stablyai/orca) - Open-source Agent Development Environment for running fleets of coding agents in parallel using your own subscriptions, with desktop, mobile, and remote runtime support.
 - [generalaction/emdash](https://github.com/generalaction/emdash) - Open-source agentic development environment for running multiple coding agents in parallel with any model provider.
