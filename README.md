@@ -56,6 +56,7 @@ Visual environments for coordinating coding agents. These range from parallel-se
 | [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | MIT | Free + Teams (beta) | Free individual; Teams $20/seat/mo after beta | BYO | Desktop | Worktrees | Mobile companion |
 | [Parallel Code](https://github.com/johannesjo/parallel-code) | MIT | Free | $0 | BYO | Desktop | Worktrees | — |
 | [Paseo](https://github.com/getpaseo/paseo) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop / Web / CLI | Agent workspaces | ✅ |
+| [AgentsMesh](https://github.com/AgentsMesh/AgentsMesh) | BSL-1.1 | 30-day trial + paid | Based $9.90/mo; Pro $19.99/seat/mo; Team $99.99/seat/mo | BYO | Web / control plane | AgentPod / worktrees | ✅ |
 | [Conductor](https://www.conductor.build/) | Proprietary | Free + Pro + Teams | Free; Pro $50/mo; Teams $60/user/mo* | BYO locally | Desktop | Worktrees / cloud sandboxes | Cloud |
 
 \* Published pricing can change. Entries with paid plans should be checked against the vendor's current pricing page.
@@ -122,10 +123,10 @@ For developers who prefer a terminal-native workflow.
 - [herdrdev/herdr](https://github.com/herdrdev/herdr) - Agent-aware terminal runtime with persistent panes, agent status, remote machines, CLI/socket APIs, and agent-to-agent orchestration.
 - [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) - TUI for managing multiple Claude Code, Codex, OpenCode, Amp, Gemini, and other agent sessions with tmux and Git worktrees.
 - [dmux](https://github.com/standardagents/dmux) - Developer-agent multiplexer pairing coding agents with Git worktrees and tmux.
-- [Worktrunk](https://github.com/max-sixty/worktrunk) - CLI for fast Git worktree management; useful as the workspace layer underneath parallel coding-agent setups.
+- [Worktrunk](https://github.com/max-sixty/worktrunk) - Dual MIT/Apache-2.0 CLI for fast Git worktree management beneath parallel coding-agent setups.
 
 - [agent-of-empires/agent-of-empires](https://github.com/agent-of-empires/agent-of-empires) - TUI plus web view for supervising the same coding-agent sessions locally or from a phone.
-- [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) - Ghostty-based macOS terminal designed for supervising many concurrent coding-agent sessions.
+- [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) - Ghostty-based macOS terminal for concurrent coding-agent sessions; app GPL-3.0-or-later, with separately licensed BSL-1.1 server components.
 
 - [awslabs/cli-agent-orchestrator](https://github.com/awslabs/cli-agent-orchestrator) - Apache-2.0 multi-agent orchestrator for coding CLIs such as Claude Code, Kiro, and Codex using isolated terminal sessions.
 
