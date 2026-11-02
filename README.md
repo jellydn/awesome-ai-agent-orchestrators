@@ -12,7 +12,7 @@ AI coding is moving from **one agent in one terminal** to **orchestrated teams o
 > [!NOTE]
 > Companion tools are kept separate so this remains an orchestrator list rather than a generic AI-tools directory.
 >
-> **Curation threshold:** GitHub-hosted tools must have **at least 1,000 stars on their canonical upstream repository**. Links and star eligibility were last verified on **2026-10-26**. Projects that fall below the threshold are removed until they qualify again.
+> **Curation threshold:** GitHub-hosted tools must have **at least 1,000 stars on their canonical upstream repository**. Links and star eligibility were last verified on **2026-11-02**. Projects that fall below the threshold are removed until they qualify again.
 
 ## **Table of Contents**
 
@@ -40,6 +40,11 @@ Visual environments for coordinating coding agents. These range from parallel-se
 | Orchestrator | License | Plan | Published price | Agent cost | Interface | Isolation | Remote |
 | --- | --- | --- | --- | --- | --- | --- | :---: |
 | [Omnigent](https://github.com/omnigent-ai/omnigent) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop / Web / CLI | Sandboxes | ✅ |
+| [Alethe](https://github.com/Kc1t/alethe-agents) | AGPL-3.0-or-later | Free / local | $0 | BYO | Desktop (macOS / Windows / Linux) | Persistent PTYs | — |
+| [CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web | Worktrees | ✅ |
+| [HumanLayer](https://github.com/humanlayer/humanlayer) | Apache-2.0 | Starter + Pro | Free (up to 3 users / 200 sessions); Pro $100/user/mo | BYO | Desktop / Web / Daemon | Worktrees / remote hosts | ✅ |
+| [nodeterm](https://github.com/eneskirca/nodeterm) | BUSL-1.1 source-available | Free download | Check vendor | BYO | Desktop / Web / iOS companion | tmux sessions | ✅ |
+| [OpenMeld](https://github.com/amplifthq/openmeld) | MIT core; third-party terms | Free + hosted services | Check hosted usage | BYO / hosted | Desktop / Web / CLI | Shared agent workspaces | ✅ |
 | [Delta](https://delta.dev/) | Proprietary | Free + Pro | Free; Pro $10/mo | BYO / hosted | Desktop / Web / Mobile | Delta worktrees | Cloud beta |
 | [Supacode](https://github.com/supabitapp/supacode) | FSL-1.1-ALv2 | Trial + lifetime | 5 worktrees free; Basic $99 once | BYO | Desktop (macOS) | Worktrees | — |
 | [Golutra](https://github.com/golutra/golutra) | BSL-1.1 | Check vendor | Check vendor | BYO | Desktop | Agent workspaces | — |
@@ -50,13 +55,12 @@ Visual environments for coordinating coding agents. These range from parallel-se
 | [iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | Source-available | Personal use | Commercial use restricted | BYO | Desktop | Multi-agent projects | — |
 | [bb](https://github.com/get-bb/bb) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web / CLI / API | Worktrees | Web |
 | [Orca](https://github.com/stablyai/orca) | MIT | Free / self-hosted | $0 | BYO | Desktop / Mobile / CLI | Worktrees / SSH | ✅ |
-| [Superset](https://github.com/superset-sh/superset) | ELv2 source-available | Free + Pro | Free; Pro $20/seat/mo ($15 yearly) | BYO | Desktop / Mobile / CLI / SDK | Worktrees | Pro |
+| [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | ELv2 source-available | Free + Pro + Team | Free; Pro $20/seat/mo ($16 yearly); Team $60/seat/mo | BYO | Desktop / Mobile / CLI / SDK | Worktrees | Pro |
 | [Emdash](https://github.com/generalaction/emdash) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop | Isolated workspaces | — |
 | [OpenChamber](https://github.com/openchamber/openchamber) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web / Editor / Mobile | Worktrees | ✅ |
 | [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | MIT | Free + Teams (beta) | Free individual; Teams $20/seat/mo after beta | BYO | Desktop | Worktrees | Mobile companion |
 | [Parallel Code](https://github.com/johannesjo/parallel-code) | MIT | Free | $0 | BYO | Desktop | Worktrees | — |
 | [Paseo](https://github.com/getpaseo/paseo) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop / Web / CLI | Agent workspaces | ✅ |
-| [AgentsMesh](https://github.com/AgentsMesh/AgentsMesh) | BSL-1.1 | 30-day trial + paid | Based $9.90/mo; Pro $19.99/seat/mo; Team $99.99/seat/mo | BYO | Web / control plane | AgentPod / worktrees | ✅ |
 | [Conductor](https://www.conductor.build/) | Proprietary | Free + Pro + Teams | Free; Pro $50/mo; Teams $60/user/mo* | BYO locally | Desktop | Worktrees / cloud sandboxes | Cloud |
 
 \* Published pricing can change. Entries with paid plans should be checked against the vendor's current pricing page.
@@ -75,6 +79,11 @@ For projects without a commercial service, the list uses **$0 + BYO** rather tha
 The table emphasizes orchestration mechanics rather than declaring a single tool the reference implementation. Only GitHub projects meeting the 1,000-star threshold are included.
 
 - [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) - Open-source desktop and web meta-harness for supervising Claude Code, Codex, Cursor, OpenCode, Pi, and custom agents, with collaborative sessions and sandboxed execution.
+- [Kc1t/alethe-agents](https://github.com/Kc1t/alethe-agents) - AGPL-3.0-or-later local-first desktop workspace for supervising persistent Claude Code, Codex, Copilot, and other coding-agent PTY sessions.
+- [NeuralNomadsAI/CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad) - MIT-licensed desktop/browser cockpit for OpenCode with parallel project sessions, Git worktrees, and remote control.
+- [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) - Apache-2.0 collaborative coding-agent workspace for coordinating tasks, sessions, plans, reviews, and remote agent daemons.
+- [eneskirca/nodeterm](https://github.com/eneskirca/nodeterm) - BUSL-1.1 source-available spatial desktop workspace for running parallel coding-agent terminals with tmux persistence, agent status, and a task board.
+- [amplifthq/openmeld](https://github.com/amplifthq/openmeld) - MIT-licensed core for a human-and-agent collaboration workspace spanning desktop, web, and CLI; third-party components retain their own licenses.
 - [Delta](https://delta.dev/) - Proprietary Zed-team desktop/web workspace with synchronized agent threads, isolated Delta worktrees, in-context review, and multiplayer collaboration.
 - [supabitapp/supacode](https://github.com/supabitapp/supacode) - FSL-1.1 source-available macOS command center for running coding agents in parallel Git worktrees.
 - [golutra/golutra](https://github.com/golutra/golutra) - BSL-1.1 source-available desktop platform for coordinating Claude Code, Codex, and other agents in shared workflows.
@@ -86,7 +95,7 @@ The table emphasizes orchestration mechanics rather than declaring a single tool
 - [get-bb/bb](https://github.com/get-bb/bb) - Open-source agentic IDE with desktop, web, CLI, and HTTP API surfaces. Runs agent work in steerable threads and supports managed Git worktrees.
 - [stablyai/orca](https://github.com/stablyai/orca) - Open-source Agent Development Environment for running fleets of coding agents in parallel using your own subscriptions, with desktop, mobile, and remote runtime support.
 - [generalaction/emdash](https://github.com/generalaction/emdash) - Open-source agentic development environment for running multiple coding agents in parallel with any model provider.
-- [superset-sh/superset](https://github.com/superset-sh/superset) - Agentic IDE designed to orchestrate large numbers of coding agents in parallel using your existing subscriptions.
+- [ParadevAI/Paradev](https://github.com/ParadevAI/Paradev) - Formerly Superset (same upstream repository ID); ELv2 source-available IDE for running coding agents in parallel Git worktrees with diff review, automations, and remote hosts.
 - [pingdotgg/t3code](https://github.com/pingdotgg/t3code) - Open-source control surface for running coding-agent sessions across web, desktop, and mobile.
 - [nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) - Visual workspace for Claude Code, Codex, and OpenCode with parallel worktrees, task tracking, visual editing, and mobile companions.
 - [coollabsio/jean](https://github.com/coollabsio/jean) - Development environment for AI agents across projects and Git worktrees.
@@ -102,13 +111,16 @@ The table emphasizes orchestration mechanics rather than declaring a single tool
 - [zeronsh/zeron](https://github.com/zeronsh/zeron) - Cross-device coding-agent control plane with an always-on daemon and synchronized sessions across machines.
 
 - [OrchestratorInc/agent-orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) - Apache-2.0 orchestration platform for planning, running, supervising, reviewing, and merging teams of coding agents across desktop, web, mobile, and cloud.
-- [AgentsMesh/AgentsMesh](https://github.com/AgentsMesh/AgentsMesh) - BSL-1.1 source-available multi-machine control plane for scheduling, isolating, and steering large fleets of AI coding agents from one console.
 - [HarnessMD/munder-difflin](https://github.com/HarnessMD/munder-difflin) - Local multi-agent harness for coordinating an office of agents using existing Claude Code and Codex subscriptions.
 - [automazeio/ccpm](https://github.com/automazeio/ccpm) - GitHub Issues and Git-worktree based project-management system for parallel agent execution.
 
 ## **2. Terminal & TUI Orchestrators**
 
 For developers who prefer a terminal-native workflow.
+
+- [Ataraxy-Labs/opensessions](https://github.com/Ataraxy-Labs/opensessions) - tmux sidebar for switching and supervising Amp, Claude Code, Codex, and OpenCode sessions; README claims MIT but no repository LICENSE file was found.
+- [codeaholicguy/ai-devkit](https://github.com/codeaholicguy/ai-devkit) - Apache-2.0 local control plane with a TUI for supervising coding agents, cross-agent messaging, and shared project configuration.
+- [first-fluke/oh-my-agent](https://github.com/first-fluke/oh-my-agent) - MIT-licensed multi-agent engineering workflows and specialist teams for Claude Code, Codex, Cursor, and other coding agents.
 - [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) - MIT-licensed teams-first multi-agent orchestration layer for Claude Code.
 - [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex) - MIT-licensed Codex extension with coordinated agent teams, hooks, and session HUDs.
 - [mvschwarz/openrig](https://github.com/mvschwarz/openrig) - Apache-2.0 persistent teams of Claude Code, Codex, and Pi agents with roles, shared context, and task ownership.
@@ -133,6 +145,8 @@ For developers who prefer a terminal-native workflow.
 ## **3. Kanban & Workflow Orchestrators**
 
 Tools that organize agent work around tasks, boards, or structured execution rather than only terminals.
+
+- [block/buzz](https://github.com/block/buzz) - Apache-2.0 self-hostable workspace where human and coding-agent teammates coordinate repository changes, reviews, signed workflow events, and agent delegation.
 - [gastownhall/gastown](https://github.com/gastownhall/gastown) - MIT-licensed multi-agent coding workspace manager for coordinating concurrent work.
 - [gastownhall/gascity](https://github.com/gastownhall/gascity) - MIT-licensed SDK for building structured multi-agent coding workflows.
 - [ApodexAI/FrontierAgent](https://github.com/ApodexAI/FrontierAgent) - Apache-2.0 terminal agent framework with Agent Team mode.
@@ -176,7 +190,7 @@ Orchestrators need agents to run. Common open-source or CLI-based companions inc
 - [openai/codex](https://github.com/openai/codex) - OpenAI Codex CLI.
 - [anomalyco/opencode](https://github.com/anomalyco/opencode) - Open-source coding agent.
 - [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) - Gemini CLI.
-- [paul-gauthier/aider](https://github.com/Aider-AI/aider) - AI pair-programming CLI.
+- [Aider-AI/aider](https://github.com/Aider-AI/aider) - AI pair-programming CLI.
 - [aaif-goose/goose](https://github.com/aaif-goose/goose) - Extensible open-source AI agent from Block.
 - [earendil-works/pi](https://github.com/earendil-works/pi) - Pi coding-agent ecosystem.
 
