@@ -12,7 +12,7 @@ AI coding is moving from **one agent in one terminal** to **orchestrated teams o
 > [!NOTE]
 > Companion tools are kept separate so this remains an orchestrator list rather than a generic AI-tools directory.
 >
-> **Curation threshold:** GitHub-hosted tools must have **at least 1,000 stars on their canonical upstream repository**. Links and star eligibility were last verified on **2026-11-02**. Projects that fall below the threshold are removed until they qualify again.
+> **Curation threshold:** GitHub-hosted tools must have **at least 1,000 stars on their canonical upstream repository**. Links and star eligibility were last verified on **2026-11-09**. Projects that fall below the threshold are removed until they qualify again.
 
 ## **Table of Contents**
 
@@ -132,6 +132,8 @@ For developers who prefer a terminal-native workflow.
 - [SeemSeam/claude_codex_bridge](https://github.com/SeemSeam/claude_codex_bridge) - AGPL-3.0 multi-agent TUI bridging Claude, Codex, Gemini, and other coding CLIs.
 - [tintinweb/pi-subagents](https://github.com/tintinweb/pi-subagents) - MIT-licensed Pi extension for parallel subagents, pipelines, and deterministic orchestration.
 
+- [just-every/code](https://github.com/just-every/code) - Apache-2.0 terminal coding agent with multi-agent `/plan`, `/code`, and `/solve` orchestration, automated execution, and parallel worktree-based reviews.
+- [Danau5tin/multi-agent-coding-system](https://github.com/Danau5tin/multi-agent-coding-system) - Apache-2.0 coding-agent orchestrator that delegates exploration, implementation, and verification to specialized agents and shares their findings across tasks.
 - [herdrdev/herdr](https://github.com/herdrdev/herdr) - Agent-aware terminal runtime with persistent panes, agent status, remote machines, CLI/socket APIs, and agent-to-agent orchestration.
 - [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) - TUI for managing multiple Claude Code, Codex, OpenCode, Amp, Gemini, and other agent sessions with tmux and Git worktrees.
 - [dmux](https://github.com/standardagents/dmux) - Developer-agent multiplexer pairing coding agents with Git worktrees and tmux.
