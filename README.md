@@ -19,7 +19,8 @@ AI coding is moving from **one agent in one terminal** to **orchestrated teams o
 1. [Desktop & GUI Orchestrators](#desktop--gui-orchestrators)
 2. [Terminal & TUI Orchestrators](#terminal--tui-orchestrators)
 3. [Kanban & Workflow Orchestrators](#kanban--workflow-orchestrators)
-4. [Companion Tools](#companion-tools)
+4. [ADE Performance Benchmarks](#ade-performance-benchmarks)
+5. [Companion Tools](#companion-tools)
    - [Agent Launchers & Providers](#agent-launchers--providers)
    - [Review & Diff](#review--diff)
    - [Context, Memory & Code Intelligence](#context-memory--code-intelligence)
@@ -160,6 +161,26 @@ Tools that organize agent work around tasks, boards, or structured execution rat
 
 - [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) - Apache-2.0 Kanban planning, isolated agent workspaces, diff review, previews, and PRs. Upstream is sunsetting; retained as a historical reference.
 - [automaker](https://github.com/AutoMaker-Org/automaker) - MIT-licensed feature-oriented Kanban/worktree agent workflow; upstream states it is no longer actively maintained.
+
+## **ADE Performance Benchmarks**
+
+An independent comparison by [ADEMark](https://ademark.dev/) tested 15 agent development environments on a **Mac mini M4 (16 GB)** using **Claude Opus 5.5, high effort** (first results, **12 November 2026**). The benchmark measures launch/responsiveness, memory and CPU usage, and token consumption. **Lower is better for each metric**; it is not a composite quality ranking or a measure of coding correctness.
+
+| ADE | Cold start (s) | New thread (ms) | At-rest RAM (MB) | Idle CPU (%) | Real-prompt tokens |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| super.engineering | 1.76 | 256 | 134 | 0.18 | 82.3K |
+| Zeron | 1.92 | 309 | 951 | 1.7 | 123.9K |
+| Paseo | 4.22 | 244 | 1,262 | 0.83 | 73.2K |
+| Diri | 2.26 | 663 | — | 0.55 | 175.8K |
+| T3 Code | 2.74 | 202 | 1,356 | 2.7 | 136.0K |
+| Emdash | 4.25 | 183 | 2,334 | 2.3 | 165.3K |
+| MonoCode | 1.80 | 191 | 419 | 9.0 | 122.4K |
+| Synara | 7.13 | 256 | 1,348 | 2.2 | 122.2K |
+| bb | 2.25 | 244 | 1,527 | 2.2 | 81.8K |
+| Orca | — | — | 1,486 | 2.6 | 208.2K |
+| Traycer | 11.4 | 336 | 1,874 | 15.8 | 357.3K |
+
+**Partially measured:** Claude Desktop, Capy, Cloudroom, and Superset (DNF). The image reports 15 ADEs and 12 tests; not all tests completed for all tools. Values above are transcribed from the published chart, not independently reproduced. Missing data is not zero. The benchmark's tool labels are not sufficient to establish canonical upstream repositories or eligibility under this list's 1,000-star rule.
 
 ## **4. Companion Tools**
 
