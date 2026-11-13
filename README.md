@@ -60,8 +60,9 @@ Visual environments for coordinating coding agents. These range from parallel-se
 | [OpenChamber](https://github.com/openchamber/openchamber) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web / Editor / Mobile | Worktrees | ✅ |
 | [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | MIT | Free + Teams (beta) | Free individual; Teams $20/seat/mo after beta | BYO | Desktop | Worktrees | Mobile companion |
 | [Parallel Code](https://github.com/johannesjo/parallel-code) | MIT | Free | $0 | BYO | Desktop | Worktrees | — |
+| [Synara](https://github.com/Emanuele-web04/synara) | MIT | Free / local | $0 | BYO | Desktop | Worktrees | — |
 | [Paseo](https://github.com/getpaseo/paseo) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop / Web / CLI | Agent workspaces | ✅ |
-| [Conductor](https://www.conductor.build/) | Proprietary | Free + Pro + Teams | Free; Pro $50/mo; Teams $60/user/mo* | BYO locally | Desktop | Worktrees / cloud sandboxes | Cloud |
+| [Conductor](https://www.conductor.build/) | Proprietary | Winding down | No new sign-ups; cloud ends Nov 20, 2026 | BYO locally | Desktop | Worktrees / cloud sandboxes | Cloud ending |
 
 \* Published pricing can change. Entries with paid plans should be checked against the vendor's current pricing page.
 
@@ -100,8 +101,9 @@ The table emphasizes orchestration mechanics rather than declaring a single tool
 - [nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) - Visual workspace for Claude Code, Codex, and OpenCode with parallel worktrees, task tracking, visual editing, and mobile companions.
 - [coollabsio/jean](https://github.com/coollabsio/jean) - Development environment for AI agents across projects and Git worktrees.
 - [johannesjo/parallel-code](https://github.com/johannesjo/parallel-code) - Desktop app for running Claude Code, Codex, and Gemini CLI side by side in isolated Git worktrees.
+- [Emanuele-web04/synara](https://github.com/Emanuele-web04/synara) - MIT-licensed local-first desktop workspace for parallel coding-agent sessions, Git worktrees, integrated terminals, previews, and change review.
 - [getpaseo/paseo](https://github.com/getpaseo/paseo) - Self-hosted multi-agent environment controllable from desktop, mobile, web, and CLI.
-- [Conductor](https://www.conductor.build/) - Proprietary desktop orchestrator for parallel coding agents in isolated workspaces with local/cloud execution, review, and automation.
+- [Conductor](https://www.conductor.build/) - Proprietary desktop orchestrator winding down after its team announced a move to Meta; new downloads/sign-ups ended November 4, 2026, and cloud service ends November 20, 2026. Retained as a historical reference.
 
 - [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant) - Parallel agent workspace supporting up to 12 agent terminals, self-validating QA, and conflict-aware merging.
 - [hardbeat920/monocode](https://github.com/hardbeat920/monocode) - Cross-platform Tauri desktop UI for running many coding-agent CLIs in parallel tabs using existing subscriptions.
