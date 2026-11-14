@@ -42,6 +42,7 @@ Visual environments for coordinating coding agents. These range from parallel-se
 | --- | --- | --- | --- | --- | --- | --- | :---: |
 | [Omnigent](https://github.com/omnigent-ai/omnigent) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop / Web / CLI | Sandboxes | ✅ |
 | [Alethe](https://github.com/Kc1t/alethe-agents) | AGPL-3.0-or-later | Free / local | $0 | BYO | Desktop (macOS / Windows / Linux) | Persistent PTYs | — |
+| [Althar](https://github.com/AltharIDE/althar) | Apache-2.0 | Free / local | $0 | BYO | Desktop (macOS / Windows / Linux) | Worktrees | — |
 | [CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web | Worktrees | ✅ |
 | [HumanLayer](https://github.com/humanlayer/humanlayer) | Apache-2.0 | Starter + Pro | Free (up to 3 users / 200 sessions); Pro $100/user/mo | BYO | Desktop / Web / Daemon | Worktrees / remote hosts | ✅ |
 | [nodeterm](https://github.com/eneskirca/nodeterm) | BUSL-1.1 source-available | Free download | Check vendor | BYO | Desktop / Web / iOS companion | tmux sessions | ✅ |
@@ -94,6 +95,7 @@ The table emphasizes orchestration mechanics rather than declaring a single tool
 - [EKKOLearnAI/ekko-studio](https://github.com/EKKOLearnAI/ekko-studio) - BSL-1.1 local-first desktop/web workspace for multi-agent chat, coding, and visual workflows.
 - [NanmiCoder/cc-haha](https://github.com/NanmiCoder/cc-haha) - Community Source desktop coding-agent workspace with worktrees, diff review, Agent Teams, and workflow coordination.
 - [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) - Source-available local-first desktop workbench for multi-engine agent teams, projects, and tasks.
+- [AltharIDE/althar](https://github.com/AltharIDE/althar) - Apache-2.0 desktop ADE that turns requests into tasks, assigns coding agents, and sends the changes to a separate model for review.
 - [get-bb/bb](https://github.com/get-bb/bb) - Open-source agentic IDE with desktop, web, CLI, and HTTP API surfaces. Runs agent work in steerable threads and supports managed Git worktrees.
 - [stablyai/orca](https://github.com/stablyai/orca) - Open-source Agent Development Environment for running fleets of coding agents in parallel using your own subscriptions, with desktop, mobile, and remote runtime support.
 - [generalaction/emdash](https://github.com/generalaction/emdash) - Open-source agentic development environment for running multiple coding agents in parallel with any model provider.
