@@ -12,7 +12,7 @@ AI coding is moving from **one agent in one terminal** to **orchestrated teams o
 > [!NOTE]
 > Companion tools are kept separate so this remains an orchestrator list rather than a generic AI-tools directory.
 >
-> **Curation threshold:** GitHub-hosted tools must have **at least 1,000 stars on their canonical upstream repository**. Links and star eligibility were last verified on **2026-11-09**. Projects that fall below the threshold are removed until they qualify again.
+> **Curation threshold:** GitHub-hosted tools must have **at least 1,000 stars on their canonical upstream repository**. Links and star eligibility were last verified on **2026-11-16**. Projects that fall below the threshold are removed until they qualify again.
 
 ## **Table of Contents**
 
@@ -25,10 +25,10 @@ AI coding is moving from **one agent in one terminal** to **orchestrated teams o
    - [Review & Diff](#review--diff)
    - [Context, Memory & Code Intelligence](#context-memory--code-intelligence)
    - [Coding Agents](#coding-agents)
-5. [Related Awesome Lists](#related-awesome-lists)
-6. [Contributions](#contributions)
-7. [Author](#author)
-8. [Support](#support)
+6. [Related Awesome Lists](#related-awesome-lists)
+7. [Contributions](#contributions)
+8. [Author](#author)
+9. [Support](#support)
 
 ## **1. Desktop & GUI Orchestrators**
 
@@ -56,7 +56,7 @@ Visual environments for coordinating coding agents. These range from parallel-se
 | [iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | Source-available | Personal use | Commercial use restricted | BYO | Desktop | Multi-agent projects | — |
 | [bb](https://github.com/get-bb/bb) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web / CLI / API | Worktrees | Web |
 | [Orca](https://github.com/stablyai/orca) | MIT | Free / self-hosted | $0 | BYO | Desktop / Mobile / CLI | Worktrees / SSH | ✅ |
-| [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | ELv2 source-available | Free + Pro + Team | Free; Pro $20/seat/mo ($16 yearly); Team $60/seat/mo | BYO | Desktop / Mobile / CLI / SDK | Worktrees | Pro |
+| [Paradev (formerly Superset)](https://github.com/ParadevAI/Paradev) | MIT | Free + Pro + Team | Free; Pro $20/seat/mo ($16 yearly); Team $60/seat/mo | BYO | Desktop / Mobile / CLI / SDK | Worktrees | Pro |
 | [Emdash](https://github.com/generalaction/emdash) | Apache-2.0 | Free / self-hosted | $0 | BYO | Desktop | Isolated workspaces | — |
 | [OpenChamber](https://github.com/openchamber/openchamber) | MIT | Free / self-hosted | $0 | BYO | Desktop / Web / Editor / Mobile | Worktrees | ✅ |
 | [Nimbalyst](https://github.com/nimbalyst/nimbalyst) | MIT | Free + Teams (beta) | Free individual; Teams $20/seat/mo after beta | BYO | Desktop | Worktrees | Mobile companion |
@@ -97,7 +97,7 @@ The table emphasizes orchestration mechanics rather than declaring a single tool
 - [get-bb/bb](https://github.com/get-bb/bb) - Open-source agentic IDE with desktop, web, CLI, and HTTP API surfaces. Runs agent work in steerable threads and supports managed Git worktrees.
 - [stablyai/orca](https://github.com/stablyai/orca) - Open-source Agent Development Environment for running fleets of coding agents in parallel using your own subscriptions, with desktop, mobile, and remote runtime support.
 - [generalaction/emdash](https://github.com/generalaction/emdash) - Open-source agentic development environment for running multiple coding agents in parallel with any model provider.
-- [ParadevAI/Paradev](https://github.com/ParadevAI/Paradev) - Formerly Superset (same upstream repository ID); ELv2 source-available IDE for running coding agents in parallel Git worktrees with diff review, automations, and remote hosts.
+- [ParadevAI/Paradev](https://github.com/ParadevAI/Paradev) - Formerly Superset (same upstream repository ID); MIT-licensed IDE for running coding agents in parallel Git worktrees with diff review, automations, and remote hosts.
 - [pingdotgg/t3code](https://github.com/pingdotgg/t3code) - Open-source control surface for running coding-agent sessions across web, desktop, and mobile.
 - [nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) - Visual workspace for Claude Code, Codex, and OpenCode with parallel worktrees, task tracking, visual editing, and mobile companions.
 - [coollabsio/jean](https://github.com/coollabsio/jean) - Development environment for AI agents across projects and Git worktrees.
@@ -151,7 +151,9 @@ For developers who prefer a terminal-native workflow.
 
 Tools that organize agent work around tasks, boards, or structured execution rather than only terminals.
 
+- [Tencent/LoopForge](https://github.com/Tencent/LoopForge) - MIT-licensed self-hosted coding-agent delivery workspace with Docker sandboxes, agent roles, repeatable SOP workflows, and human approval gates across Claude Code, Codex, OpenCode, and other CLIs.
 - [block/buzz](https://github.com/block/buzz) - Apache-2.0 self-hostable workspace where human and coding-agent teammates coordinate repository changes, reviews, signed workflow events, and agent delegation.
+- [HKUDS/DeepCode](https://github.com/HKUDS/DeepCode) - MIT-licensed multi-agent coding framework for coordinating specialized agents through software-development and code-generation workflows.
 - [gastownhall/gastown](https://github.com/gastownhall/gastown) - MIT-licensed multi-agent coding workspace manager for coordinating concurrent work.
 - [gastownhall/gascity](https://github.com/gastownhall/gascity) - MIT-licensed SDK for building structured multi-agent coding workflows.
 - [ApodexAI/FrontierAgent](https://github.com/ApodexAI/FrontierAgent) - Apache-2.0 terminal agent framework with Agent Team mode.
@@ -219,11 +221,11 @@ Orchestrators need agents to run. Common open-source or CLI-based companions inc
 - [aaif-goose/goose](https://github.com/aaif-goose/goose) - Extensible open-source AI agent from Block.
 - [earendil-works/pi](https://github.com/earendil-works/pi) - Pi coding-agent ecosystem.
 
-## **5. Related Awesome Lists**
+## **6. Related Awesome Lists**
 
 - [andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators) - Broad directory covering terminal, desktop/web, swarm, autonomous, and infrastructure orchestrators.
 
-## **6. Contributions**
+## **7. Contributions**
 
 Contributions are welcome. The primary list is for tools that **coordinate multiple coding agents, sessions, tasks, or execution environments**. Companion tools may supervise, isolate, review, route, provide context, or otherwise materially support those orchestrated workflows.
 
@@ -237,7 +239,7 @@ Before submitting a project:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## **7. Author**
+## **8. Author**
 
 **Dung Huynh**
 
@@ -246,7 +248,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - X: [@jellydn](https://twitter.com/jellydn)
 - GitHub: [@jellydn](https://github.com/jellydn)
 
-## **8. Support**
+## **9. Support**
 
 Give this project a ⭐️ if it helps you discover a better way to run coding agents.
 
