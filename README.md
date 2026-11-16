@@ -19,16 +19,17 @@ AI coding is moving from **one agent in one terminal** to **orchestrated teams o
 1. [Desktop & GUI Orchestrators](#desktop--gui-orchestrators)
 2. [Terminal & TUI Orchestrators](#terminal--tui-orchestrators)
 3. [Kanban & Workflow Orchestrators](#kanban--workflow-orchestrators)
-4. [ADE Performance Benchmarks](#ade-performance-benchmarks)
-5. [Companion Tools](#companion-tools)
+4. [Cloud Coding Agents & Remote Sessions](#cloud-coding-agents--remote-sessions)
+5. [ADE Performance Benchmarks](#ade-performance-benchmarks)
+6. [Companion Tools](#companion-tools)
    - [Agent Launchers & Providers](#agent-launchers--providers)
    - [Review & Diff](#review--diff)
    - [Context, Memory & Code Intelligence](#context-memory--code-intelligence)
    - [Coding Agents](#coding-agents)
-6. [Related Awesome Lists](#related-awesome-lists)
-7. [Contributions](#contributions)
-8. [Author](#author)
-9. [Support](#support)
+7. [Related Awesome Lists](#related-awesome-lists)
+8. [Contributions](#contributions)
+9. [Author](#author)
+10. [Support](#support)
 
 ## **1. Desktop & GUI Orchestrators**
 
@@ -163,6 +164,23 @@ Tools that organize agent work around tasks, boards, or structured execution rat
 
 - [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) - Apache-2.0 Kanban planning, isolated agent workspaces, diff review, previews, and PRs. Upstream is sunsetting; retained as a historical reference.
 - [automaker](https://github.com/AutoMaker-Org/automaker) - MIT-licensed feature-oriented Kanban/worktree agent workflow; upstream states it is no longer actively maintained.
+
+## **Cloud Coding Agents & Remote Sessions**
+
+Cloud coding agents execute tasks on **remote hosted development environments**, so sessions can continue after your laptop is closed. This section tracks first-party hosted agent services separately from desktop/terminal **orchestrators**. A cloud agent is not automatically a multi-agent orchestrator; the distinction matters when comparing products. Proprietary services are eligible here without a GitHub star requirement. GitHub-hosted open-source projects still follow the 1,000-star canonical-upstream rule.
+
+| Cloud agent | Remote execution | Start / manage from | Workflow and handoff | Notes |
+| --- | --- | --- | --- | --- |
+| [Amp Orbs](https://ampcode.com/docs/orbs/getting-started) | Per-thread cloud machine | Web, desktop, mobile, CLI | Persistent sessions, live previews, agent-to-agent delegation | Amp-managed environments; cloud tasks continue while offline |
+| [Cursor Cloud Agents](https://cursor.com/docs/cloud-agent) | Isolated cloud VMs | Web, desktop, iOS, Slack, GitHub, Linear, API | Parallel agents, tests, artifacts, branches and PRs | Formerly Background Agents; supports multi-repo tasks |
+| [Devin](https://devin.ai/) | Hosted agent development environment | Web and integrations | Delegated coding tasks, review and PR handoff | Proprietary; verify current plan and integrations before purchasing |
+| [Claude Code on the web](https://code.claude.com/docs/en/claude-code-on-the-web) | Hosted Claude Code sessions | Web | Async coding tasks and GitHub PR workflow | Distinct from running Claude Code locally |
+| [OpenAI Codex cloud](https://developers.openai.com/codex/cloud) | Cloud task environments | Web and Codex clients | Async tasks, code changes, review and PR handoff | Distinct from local Codex CLI |
+| [GitHub Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent) | GitHub-hosted development environment | GitHub, IDE, issues and integrations | Research, plan, implement, test, review, PR | Available on paid Copilot plans; subject to repository policies |
+
+### Cloud Agent Evaluation Checklist
+
+When researching additional services, record: **execution environment** (hosted VM/container vs local), **session persistence**, **parallel sessions**, **agent-to-agent delegation**, **GitHub/GitLab support**, **environment setup and secrets**, **test/preview capabilities**, **PR handoff**, **mobile/API access**, **team collaboration**, and **pricing or usage limits**. Distinguish true remote execution from a remote UI controlling an agent running on the user's machine. Prefer official product documentation and pricing pages; avoid inferring orchestration capabilities from a product name.
 
 ## **ADE Performance Benchmarks**
 
