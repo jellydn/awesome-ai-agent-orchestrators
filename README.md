@@ -218,6 +218,9 @@ These are not necessarily Conductor replacements. They make a parallel-agent set
 
 ### Review & Diff
 
+- [CodeRabbit Review](https://www.coderabbit.ai/) - Commercial AI PR review with coding-agent feedback loops and pre-merge checks; companion verification tooling, not a standalone multi-agent orchestrator.
+- [CodeRabbit Verify](https://www.coderabbit.ai/blog/introducing-coderabbit-verify) - Public-beta application-level QA: prepares sandbox environments, tests PR changes and reusable user journeys, retains recordings and logs, and hands reproducible failures back to coding agents. Beta terms and pricing may change.
+
 - [modem-dev/hunk](https://github.com/modem-dev/hunk) - Review-first terminal diff viewer designed for agent-authored changes, including live sessions and inline agent annotations.
 - [dandavison/delta](https://github.com/dandavison/delta) - Syntax-highlighting pager for Git, diff, grep, and blame output; useful for agent-heavy terminal workflows.
 - [Wilfred/difftastic](https://github.com/Wilfred/difftastic) - Structural diff tool that compares syntax rather than only lines.
@@ -239,6 +242,20 @@ Orchestrators need agents to run. Common open-source or CLI-based companions inc
 - [Aider-AI/aider](https://github.com/Aider-AI/aider) - AI pair-programming CLI.
 - [aaif-goose/goose](https://github.com/aaif-goose/goose) - Extensible open-source AI agent from Block.
 - [earendil-works/pi](https://github.com/earendil-works/pi) - Pi coding-agent ecosystem.
+
+## **Software Factory Reliability & Evaluation**
+
+Beyond launching parallel agents, production-grade software factories need an independent **verification and delivery loop**. Lessons from [Harjot Gill's discussion with The Pragmatic Engineer (18 Nov 2026)](https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews) and [CodeRabbit's agentic-development case study](https://openai.com/index/coderabbit-codex-daybreak/):
+
+1. **Plan and release review:** Review task intent, architecture, acceptance criteria, and release outcomes, not just generated diffs. Keep human approval for high-risk changes.
+2. **Layered verification:** Require deterministic unit/integration tests, realistic API emulation, browser/user-journey testing, and—in concurrency-critical systems—simulation or formal methods (e.g., TLA+). Record evidence per revision.
+3. **Agent repair loop:** Feed failing tests, traces, screenshots, and reviewer findings back to coding agents; re-run verification before merging.
+4. **CI capacity and economics:** Measure queue time, flaky-test rate, sandbox capacity, and cost per *accepted and deployed* change rather than raw PR counts.
+5. **Progressive delivery:** Use feature flags, staged rollouts, telemetry, rollback controls, and explicit promotion gates. Do not grant unrestricted production access to autonomous agents.
+6. **Risk-based permissions:** Define which changes can auto-merge or deploy and when human review becomes mandatory; log actions and revoke privileges after incidents.
+7. **Long-running cloud sessions:** Assess checkpoint/recovery, unattended execution, remote observability, secrets isolation, and human takeover when agents stall.
+
+These are **evaluation criteria**, not claims that every listed orchestrator implements them. High PR volume and high AI spend are anecdotes, not quality benchmarks; compare measurable delivery outcomes and failure rates.
 
 ## **6. Related Awesome Lists**
 
